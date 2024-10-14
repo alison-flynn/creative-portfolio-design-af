@@ -1,0 +1,36 @@
+{
+  "id": "image_left_text_right",
+  "type": "SharedSlice",
+  "name": "ImageLeftTextRight",
+  "description": "ImageLeftTextRight",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "left_image": {
+          "type": "Image",
+          "config": {
+            "label": "Left Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "right_column": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Right Column",
+            "placeholder": "",
+            "allowTargetBlank": true,
+            "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}

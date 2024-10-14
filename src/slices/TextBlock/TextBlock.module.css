@@ -1,0 +1,117 @@
+/* Styling for text block sections with h3 */
+.textBlockSectionWithHeading {
+  background: linear-gradient(135deg, #F5F5F5 0%, #E0E0E0 100%);
+  color: #191919;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Styling for every second text block with h3 */
+.textBlockSectionWithHeading:nth-child(even) {
+  background: linear-gradient(135deg, #E0E0E0 0%, #F5F5F5 100%);
+}
+
+/* Updated Styling for text block sections without h3 */
+/* Updated styling for text block sections without h3 */
+.textBlockSectionWithoutHeading {
+  background: linear-gradient(135deg, #1F1F1F 0%, #2A2A2A 100%);
+  color: #FFFFFF;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+  
+  /* Match the image block's padding and width */
+  width: 100%; /* Full width for container */
+  max-width: 6xl; /* Same as image block */
+  padding-left: 1rem; /* Matches px-4 padding */
+  padding-right: 1rem; /* Matches px-4 padding */
+  margin-left: auto; /* Centers the block */
+  margin-right: auto; /* Centers the block */
+
+  /* For larger screens, apply the wider padding like the image block */
+  @media (min-width: 768px) {
+    padding-left: 3rem; /* Matches md:px-12 */
+    padding-right: 3rem; /* Matches md:px-12 */
+  }
+}
+
+
+/* Styling for headings */
+.textBlockSectionWithHeading h3 {
+  color: #191919;
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+  border-bottom: 4px solid #F5CB00;
+  display: inline-block;
+}
+
+/* Paragraph styling for both cases */
+.richTextColumn p {
+  font-size: 1rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+
+/* Italic text inside bullet points and paragraphs for sections with h3 */
+.textBlockSectionWithHeading ul li em,
+.textBlockSectionWithHeading p em {
+  color: #8A87C6;
+}
+
+/* Italic text inside bullet points and paragraphs for sections without h3 (darker background) */
+.textBlockSectionWithoutHeading ul li em,
+.textBlockSectionWithoutHeading p em {
+  color: #8A87C6;
+}
+
+/* Bold text styling for bullet points in sections with h3 */
+.textBlockSectionWithHeading ul li strong {
+  color: #191919;
+  font-weight: 700;
+}
+
+/* Bold text styling for regular paragraphs in sections with h3 */
+.textBlockSectionWithHeading p strong {
+  color: #191919;
+  font-weight: 700;
+}
+
+/* Bold text styling in paragraphs without h3 */
+.textBlockSectionWithoutHeading p strong {
+  font-weight: 700;
+  color: #F5CB00;
+}
+
+/* Bold text styling inside bulleted lists for sections without h3 */
+.textBlockSectionWithoutHeading ul li strong {
+  font-weight: 700;
+  color: #F5CB00;
+}
+
+/* Special background for sections that only contain h3s */
+.textBlockOnlyHeading {
+  color: #FFFFFF;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Headings inside sections with only h3s */
+.textBlockOnlyHeading h3 {
+  color: #FFFFFF;
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0.8rem;
+  border-bottom: 4px solid #8A87C6;
+}

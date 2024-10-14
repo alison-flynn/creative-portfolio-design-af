@@ -1,0 +1,78 @@
+/* Container for the two columns (image and text) */
+.two-column-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Center-aligns both image and text vertically */
+  gap: 20px; /* Add gap between the image and text columns */
+}
+
+/* Styling for the text column */
+.richTextColumn {
+  background-color: #1C1C1C; /* Lighter dark grey background */
+  padding: 15px; /* Reduced padding for a compact layout */
+  border-radius: 10px; /* Smooth rounded corners to match */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05); /* Lighter shadow */
+  width: 100%;
+  margin-bottom: 20px; /* Add spacing below the text */
+  align-self: center; /* Center the text column vertically */
+  flex-grow: 1; /* Allow it to take up the remaining space */
+}
+
+/* Styling for the image column */
+.imageColumn {
+  flex-shrink: 0; /* Prevent the image column from shrinking */
+  width: 40%; /* Set the image column width */
+  align-self: center; /* Center the image vertically */
+}
+
+/* Heading styling */
+.heading {
+  color: #FFFFFF; /* Soft Gold for headings */
+  font-size: 1.8rem; /* Slightly reduced font size to match */
+  font-weight: bold; /* Strong emphasis */
+  margin-bottom: 0.8rem; /* Further reduced space below heading */
+  text-transform: uppercase; /* Uppercase text for headings */
+  padding-bottom: 4px; /* Padding between text and underline */
+  border-bottom: 2px solid #8A87C6; /* Lavender line under the heading */
+  display: inline-block; /* No line under the heading */
+}
+
+/* Paragraph text styling */
+.text {
+  color: #E0E0E0; /* Light silver for paragraph text */
+  font-size: 1rem; /* Reduced font size for compactness */
+  line-height: 1.4; /* Further reduced line height for better readability */
+  margin-bottom: 1rem; /* Reduced space between paragraphs */
+}
+
+/* Strong text styling */
+.text strong {
+  color: #F5CB00; /* White for bold text */
+  font-weight: bold;
+}
+
+/* Italic text styling, including within bulleted lists */
+.text em,
+.richTextColumn ul li em {
+  color: #8A87C6 !important; /* Lavender for italic text */
+  font-style: italic;
+}
+
+/* Bulleted list styling */
+.richTextColumn ul li {
+  color: #E0E0E0; /* Silver for text inside bullet points */
+  margin-left: 15px; /* Slightly reduced indentation for bullets */
+  margin-bottom: 8px; /* Reduced space between list items */
+  list-style-type: disc;
+}
+
+/* Standard bullet points */
+.richTextColumn ul {
+  list-style-type: disc;
+}
+
+/* Strong text within lists */
+.richTextColumn ul li strong {
+  color: #F5CB00; /* White for bold text within lists */
+  font-weight: bold;
+}

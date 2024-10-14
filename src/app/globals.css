@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  height: 100%; /* Ensure body takes full height */
+}
+
+.prismic-content h3 {
+  color: #ff6347; /* Your custom color */
+}
+

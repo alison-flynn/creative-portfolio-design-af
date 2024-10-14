@@ -1,0 +1,61 @@
+/* Common styling for rich text columns (both left and right columns) */
+.richTextColumn {
+  background-color: #232323; /* Lighter dark grey background */
+  padding: 6px 12px; /* Further reduced padding for a more compact layout */
+  border-radius: 8px; /* Smooth rounded corners */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  width: 100%;
+  margin-bottom: 8px; /* Reduced spacing between sections */
+}
+
+/* Heading styling with lavender underline */
+.heading {
+  color: #FFFFFF; /* White for headings */
+  font-size: 1.7rem; /* Slightly reduced font size */
+  font-weight: bold; /* Strong emphasis */
+  margin-bottom: 0.6rem; /* Reduced space below heading */
+  text-transform: uppercase; /* Uppercase text for headings */
+  padding-bottom: 4px; /* Space between heading and line */
+  border-bottom: 2px solid #8A87C6; /* Lavender underline */
+  display: inline-block; /* Make the underline as wide as the text */
+}
+
+/* Paragraph text styling */
+.text {
+  color: #E0E0E0; /* Light silver for paragraph text */
+  font-size: 1rem; /* Further reduced font size */
+  line-height: 1.4; /* Further reduced line height */
+  margin-bottom: 1rem; /* Reduced space between paragraphs */
+}
+
+/* Strong text styling */
+.text strong {
+  color: #F5CB00; /* Soft Gold for bold text */
+  font-weight: bold;
+}
+
+/* Italic text styling, including within bulleted lists */
+.text em,
+.richTextColumn ul li em {
+  color: #8A87C6 !important; /* Lavender for italic text */
+  font-style: italic;
+}
+
+/* Bulleted list styling */
+.richTextColumn ul li {
+  color: #E0E0E0; /* Silver for text inside bullet points */
+  margin-left: 12px; /* Reduced indentation for bullets */
+  margin-bottom: 6px; /* Further reduced space between list items */
+  list-style-type: disc;
+}
+
+/* Remove yellow bullet symbols */
+.richTextColumn ul {
+  list-style-type: disc; /* Standard bullet points */
+}
+
+/* Strong text within lists */
+.richTextColumn ul li strong {
+  color: #F5CB00; /* Soft Gold for bold text within lists */
+  font-weight: bold;
+}
